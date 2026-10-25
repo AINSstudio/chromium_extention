@@ -1,6 +1,6 @@
 # AINS Studio — Glasswing
 
-A client-side Chrome extension that improves AINS reading records at `ains.moe.gov.my/web/*`.
+A client-side Chromium extension that improves AINS reading records at `ains.moe.gov.my/web/*`.
 
 **Current release:** `v5.0.0` · **Codename:** Glasswing
 
@@ -24,7 +24,7 @@ A client-side Chrome extension that improves AINS reading records at `ains.moe.g
 
 See [CHANGELOG.md](CHANGELOG.md) for version history and [GITHUB_RELEASE_NOTES.md](GITHUB_RELEASE_NOTES.md) for copy-and-paste release notes.
 
-## Install or update in Chrome
+## Install or update in Chrome/Chromium
 
 1. Open `chrome://extensions` and enable **Developer mode**.
 2. Choose **Load unpacked** and select this folder, which contains `manifest.json`. If already installed, click its reload button.
@@ -36,4 +36,4 @@ See [CHANGELOG.md](CHANGELOG.md) for version history and [GITHUB_RELEASE_NOTES.m
 - Extensions: `/web/dashboard?ains-studio=extensions`
 - Excel import: `/web/new-record-book`
 
-AINS Studio runs in the current browser. Its Extensions page reports AINS Studio’s own status; Chrome does not expose unrelated installed extensions without broad extension-management permission.
+AINS Studio runs in the current browser. Its Extensions page reports AINS Studio’s own status; Chromium does not expose unrelated installed extensions without broad extension-management permission.
