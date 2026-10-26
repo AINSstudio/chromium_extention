@@ -1,24 +1,31 @@
 # Changelog — AINS Studio / Glasswing
 
+## [5.0.1] — 2026-10-26
+
+### Fixed
+- Changed the Excel importer's 3-second approval countdown to use a saved absolute deadline, so browser timer throttling while another app is active does not restart the countdown.
+- Persisted the approval deadline with the current batch row so a page reload resumes the remaining time instead of starting a fresh prompt.
+- Added an importer note explaining how background-tab suspension affects countdown display and resume behavior.
+
 ## [5.0.0] — 2026-10-25
 
 ### Added
 - Added a full-page AINS Studio settings center with appearance and language controls.
 - Added global enable/disable and individual switches for appearance, translation, dashboard, reading activity, Excel import, and clipboard support; disabled features return to AINS defaults.
-- Added an account-bar settings shortcut and made the Chrome toolbar action open the full settings page.
+- Added an account-bar settings shortcut and made the Chromium toolbar action open the full settings page.
 - Added a custom Studio 404 page for unsupported Studio routes.
 - Added a Safari extension “Coming soon” notice to the settings center.
 - Added a “Don’t show again” checkbox to the AINS announcement dialog with a settings-page reset.
 
 ### Changed
-- Removed the Chrome action popup and the floating in-page settings popout.
+- Removed the Chromium action popup and the floating in-page settings popout.
 - Load the full redesign stylesheet only when the extension appearance is enabled, while keeping Studio settings and the account shortcut reachable.
 - Removed the obsolete popup files.
 
 ## [4.36.0] — 2026-10-25
 
 ### Added
-- Set the Excel importer to the supplied shared admin code; Chrome stores its salted PBKDF2-SHA-256 hash rather than the plaintext.
+- Set the Excel importer to the supplied shared admin code; Chromium stores its salted PBKDF2-SHA-256 hash rather than the plaintext.
 - Added show/hide code control and a 30-second cooldown after five incorrect attempts.
 - Added a localized Safari extension “Coming soon” card in the popup and Studio extensions page.
 - Updated the Extensions page to display the installed extension version dynamically.
@@ -27,7 +34,7 @@
 
 ### Added
 - Added a password gate to the Excel importer with first-use local password setup and per-tab-session unlock.
-- Store only a salted PBKDF2-SHA-256 password hash in Chrome extension storage; saved imports require unlock before resuming.
+- Store only a salted PBKDF2-SHA-256 password hash in Chromium extension storage; saved imports require unlock before resuming.
 - Label the importer as admin-only and explain that the local lock does not authenticate AINS server privileges.
 
 ## [4.34.0] — 2026-10-25
@@ -125,5 +132,5 @@ This changelog summarizes the product changes made during the AINS Studio redesi
 ## Notes
 
 - AINS Studio is client-side and works on `https://ains.moe.gov.my/web/*`.
-- Reading snapshots and importer state are stored in Chrome extension storage; records are not uploaded by the extension.
-- The Extensions page can report AINS Studio but cannot list unrelated installed Chrome extensions without broad extension-management permission.
+- Reading snapshots and importer state are stored in Chromium extension storage; records are not uploaded by the extension.
+- The Extensions page can report AINS Studio but cannot list unrelated installed Chromium extensions without broad extension-management permission.

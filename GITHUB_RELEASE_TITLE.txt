@@ -1,1 +1,1 @@
-AINS Studio v5.0.0 — Glasswing
+AINS Studio Glasswing for Chromium v5.0.1
